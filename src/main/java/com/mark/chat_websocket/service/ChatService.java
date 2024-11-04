@@ -9,7 +9,7 @@ public class ChatService {
     private static final String CHARACTERS = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
     private static final SecureRandom random = new SecureRandom();
 
-    private static String generateRandomCode(String data) {
+    public String answerMessage(String data) {
         StringBuilder res = new StringBuilder();
         for (int i = 0; i < data.length(); i++) {
             int index = random.nextInt(CHARACTERS.length());
